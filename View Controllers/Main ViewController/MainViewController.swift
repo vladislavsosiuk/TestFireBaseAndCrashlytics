@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 import GoogleSignIn
 import FirebaseDatabase
+import Crashlytics
+
 
 
 class MainViewController: UIViewController {
@@ -110,10 +112,14 @@ class MainViewController: UIViewController {
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
-        alert.addAction(saveAction)
+        alert.addAction(saveAction) 
         alert.addAction(cancelAction)
         
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func crashClicked(_ sender: UIBarButtonItem) {
+        Crashlytics.sharedInstance().crash()
     }
     
     //MARK: - Helpers

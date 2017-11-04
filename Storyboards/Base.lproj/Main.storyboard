@@ -90,6 +90,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="xHX-5s-OUJ">
+                        <barButtonItem key="leftBarButtonItem" title="Crash" id="pvo-B2-Dg3">
+                            <connections>
+                                <action selector="crashClicked:" destination="BYZ-38-t0r" id="dyG-iI-OWq"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ICL-bi-S7f">
                             <connections>
                                 <action selector="addNote:" destination="BYZ-38-t0r" id="l33-BA-zqk"/>

@@ -12,4 +12,6 @@ target 'TestFireBaseAndCrashlytics' do
 	pod 'GoogleSignIn'
 	pod 'Firebase/Database'
 	pod 'Firebase/Messaging'
+	pod 'Fabric'
+	pod 'Crashlytics'
 end

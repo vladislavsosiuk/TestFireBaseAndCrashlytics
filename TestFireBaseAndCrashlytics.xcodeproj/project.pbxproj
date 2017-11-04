@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1523224C8BE61FCB495D6804 /* Pods_TestFireBaseAndCrashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398B656236769040AB25BB84 /* Pods_TestFireBaseAndCrashlytics.framework */; };
-		455B156F1FAC7ABF004E2A6B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 458608FF1FAC76D70009A663 /* Info.plist */; };
 		4570125A1FAC80C4003874E2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457012591FAC80C4003874E2 /* SignInViewController.swift */; };
 		458608F41FAC76D70009A663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458608F31FAC76D70009A663 /* AppDelegate.swift */; };
 		458608F61FAC76D70009A663 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458608F51FAC76D70009A663 /* MainViewController.swift */; };
@@ -197,6 +196,7 @@
 				458608EE1FAC76D70009A663 /* Resources */,
 				C56A4C1CAD2FE68225044B4D /* [CP] Embed Pods Frameworks */,
 				9B528535C1450300F58C76C3 /* [CP] Copy Pods Resources */,
+				45F0C68F1FAE0FD100AEB17B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -246,7 +246,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				455B156F1FAC7ABF004E2A6B /* Info.plist in Resources */,
 				458608FE1FAC76D70009A663 /* LaunchScreen.storyboard in Resources */,
 				4586090C1FAC78550009A663 /* GoogleService-Info.plist in Resources */,
 				458608FB1FAC76D70009A663 /* Assets.xcassets in Resources */,
@@ -257,6 +256,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		45F0C68F1FAE0FD100AEB17B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" c47e71296b622506395d6dad2a70c9471a93da0f b18a70db3dddbd880580bd5a9129f320aa97f219a095dacadd75d891c863625e";
+		};
 		8C8E1B5BE4796CA1CE0F83C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,6 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = DCX4J53M3H;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -488,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = DCX4J53M3H;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
